@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#26354d"/>
+    </linearGradient>
+    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="18"/><feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer><feOffset dy="12"/></filter>
+  </defs>
+  <rect width="1600" height="900" fill="url(#bg)"/>
+  <circle cx="180" cy="230" r="240" fill="#3b82f6" opacity=".08"/><circle cx="1390" cy="720" r="330" fill="#22d3ee" opacity=".07"/>
+  <rect x="0" y="0" width="1600" height="62" fill="#0b1220" opacity=".88"/>
+  <text x="42" y="39" fill="#9ca3af" font-family="sans-serif" font-size="22">DankMaterialShell</text>
+  <text x="800" y="39" text-anchor="middle" fill="#8ea4c9" font-family="sans-serif" font-size="19">Fullscreen Notification Island</text>
+  <rect x="590" y="112" width="420" height="62" rx="31" fill="#1f2937" opacity=".96" filter="url(#shadow)"/>
+  <rect x="590" y="112" width="420" height="62" rx="31" fill="#202a3b" stroke="#51627d" stroke-width="2"/>
+  <circle cx="626" cy="143" r="14" fill="#3b82f6"/><path d="M626 132v22M617 141h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
+  <text x="656" y="149" fill="#f3f4f6" font-family="sans-serif" font-size="23">KDE Connect · Galaxy A15</text>
+  <text x="800" y="260" text-anchor="middle" fill="#9fb2cf" font-family="sans-serif" font-size="22">Compact DankIsland-style notification above a fullscreen app</text>
+  <rect x="510" y="326" width="580" height="222" rx="20" fill="#111827" opacity=".7" filter="url(#shadow)"/>
+  <rect x="510" y="326" width="580" height="222" rx="20" fill="#202833" stroke="#60708b" stroke-width="2"/>
+  <circle cx="560" cy="380" r="22" fill="#3b82f6"/><path d="M560 366v28M549 378h22" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
+  <text x="602" y="378" fill="#aebbd0" font-family="sans-serif" font-size="20">KDE Connect</text>
+  <text x="602" y="418" fill="#f9fafb" font-family="sans-serif" font-size="29">Galaxy A15</text>
+  <text x="602" y="457" fill="#c3cede" font-family="sans-serif" font-size="22">Ping!</text>
+  <rect x="548" y="492" width="505" height="4" rx="2" fill="#3b82f6" opacity=".9"/>
+  <text x="800" y="788" text-anchor="middle" fill="#8293ad" font-family="sans-serif" font-size="19">Selectable card or island mode · fullscreen-only · multi-monitor aware</text>
+</svg>
