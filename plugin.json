@@ -4,7 +4,7 @@
     "description": "Shows a selectable detailed card or compact DankIsland-style notification pill above fullscreen applications",
     "version": "0.2.0",
     "license": "MIT",
-    "author": "Local plugin",
+    "author": "MoemenKarmaoui",
     "icon": "notifications",
     "type": "daemon",
     "capabilities": [
