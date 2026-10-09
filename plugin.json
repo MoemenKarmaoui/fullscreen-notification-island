@@ -1,0 +1,22 @@
+{
+    "id": "fullscreenNotificationIsland",
+    "name": "Fullscreen Notification Island",
+    "description": "Shows a selectable detailed card or compact DankIsland-style notification pill above fullscreen applications",
+    "version": "0.2.0",
+    "license": "MIT",
+    "author": "Local plugin",
+    "icon": "notifications",
+    "type": "daemon",
+    "capabilities": [
+        "notification-overlay",
+        "fullscreen-popup",
+        "multi-monitor"
+    ],
+    "component": "./FullscreenNotificationIsland.qml",
+    "settings": "./FullscreenNotificationIslandSettings.qml",
+    "requires_dms": ">=1.6.0",
+    "permissions": [
+        "settings_read",
+        "settings_write"
+    ]
+}
