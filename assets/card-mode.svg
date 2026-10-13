@@ -1,0 +1,103 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" width="1200" height="560">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070a12"/>
+    </linearGradient>
+    <radialGradient id="glow-card" cx="75%" cy="35%" r="60%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.4"/>
+    </linearGradient>
+    <filter id="shadow-card" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="22" flood-color="#000" flood-opacity="0.75"/>
+    </filter>
+  </defs>
+
+  <rect width="1200" height="560" fill="url(#bg)"/>
+  <rect width="1200" height="560" fill="url(#glow-card)"/>
+
+  <g transform="translate(60, 40)">
+    <rect width="1080" height="480" rx="14" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+    
+    <path d="M 0,350 Q 240,300 500,330 T 1080,330 L 1080,480 L 0,480 Z" fill="#0c1322"/>
+    <path d="M 0,400 Q 300,350 600,390 T 1080,380 L 1080,480 L 0,480 Z" fill="#111c33"/>
+    <ellipse cx="780" cy="360" rx="260" ry="70" fill="#7c3aed" opacity="0.14"/>
+
+    <text x="24" y="456" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="500">
+      ● FOCUSED SCREEN: FULLSCREEN APPLICATION ACTIVE
+    </text>
+    <text x="1056" y="456" text-anchor="end" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">
+      DankListView (Smooth Stack Scrolling &amp; Transitions)
+    </text>
+
+    <g transform="translate(48, 80)">
+      <rect width="450" height="240" rx="14" fill="#0f172a" stroke="#1e293b" stroke-width="1.2"/>
+      <text x="32" y="44" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="20" font-weight="700">Detailed Card Stack Mode</text>
+      <text x="32" y="80" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="600">Rich Multi-Card Notification Stacks</text>
+      <text x="32" y="112" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">
+        • Shows full notification title, summary, and body text
+      </text>
+      <text x="32" y="138" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">
+        • Standard DankActionButton for quick dismissal
+      </text>
+      <text x="32" y="164" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">
+        • Click card to invoke default application action
+      </text>
+      <text x="32" y="190" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">
+        • Privacy mode hides sensitive message bodies
+      </text>
+      
+      <g transform="translate(32, 212)">
+        <rect width="116" height="22" rx="6" fill="#1e293b"/>
+        <text x="58" y="15" text-anchor="middle" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">displayMode: 'card'</text>
+      </g>
+    </g>
+
+    <!-- RIGHT SIDE: FLOATING CARD STACK -->
+    <g transform="translate(560, 36)" filter="url(#shadow-card)">
+      <rect width="460" height="150" rx="18" fill="#111827" fill-opacity="0.97"/>
+      <rect width="460" height="150" rx="18" fill="none" stroke="url(#cardBorder)" stroke-width="1.8"/>
+
+      <circle cx="42" cy="44" r="24" fill="#0284c7"/>
+      <path d="M 42,30 C 37,30 34,34 34,38 L 34,47 L 31,50 L 31,52 L 53,52 L 53,50 L 50,47 L 50,38 C 50,34 47,30 42,30 Z M 40,54 C 40,55.1 40.9,56 42,56 C 43.1,56 44,55.1 44,54 Z" fill="#f0f9ff"/>
+
+      <text x="80" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Steam · Friend Activity</text>
+      
+      <text x="80" y="60" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700">Alex is playing Cyberpunk 2077</text>
+      
+      <text x="80" y="86" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">"Join lobby? We have an open slot right now."</text>
+
+      <g transform="translate(80, 106)">
+        <rect width="90" height="26" rx="13" fill="#0284c7" opacity="0.25"/>
+        <text x="45" y="17" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Launch Game</text>
+      </g>
+
+      <g transform="translate(416, 16)">
+        <circle cx="14" cy="14" r="14" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+        <path d="M 10,10 L 18,18 M 18,10 L 10,18" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <g transform="translate(570, 204)" opacity="0.88" filter="url(#shadow-card)">
+      <rect width="440" height="106" rx="16" fill="#0f172a" fill-opacity="0.96"/>
+      <rect width="440" height="106" rx="16" fill="none" stroke="#334155" stroke-width="1.2"/>
+
+      <circle cx="40" cy="42" r="20" fill="#10b981"/>
+      <path d="M 33,40 C 37,38 43,38 47,40 M 34,44 C 37,42 42,42 46,44 M 35,48 C 38,46 41,46 45,48" stroke="#fff" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+      <text x="74" y="34" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Spotify</text>
+      <text x="74" y="58" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600">Starboy — The Weeknd</text>
+      <text x="74" y="82" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13">Album: Starboy · Playing on Desktop</text>
+
+      <g transform="translate(398, 14)">
+        <circle cx="12" cy="12" r="12" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+        <path d="M 9,9 L 15,15 M 15,9 L 9,15" stroke="#64748b" stroke-width="1.5" stroke-linecap="round"/>
+      </g>
+    </g>
+  </g>
+</svg>
