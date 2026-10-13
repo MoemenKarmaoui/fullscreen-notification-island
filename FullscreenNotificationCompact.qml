@@ -16,14 +16,16 @@ Item {
     signal activated()
     signal dismissed()
 
+    readonly property real iconDimension: Theme.iconSize + Theme.spacingXS
+    readonly property real minPillWidth: Theme.iconSize * 6 + Theme.spacingL
     implicitWidth: maxPillWidth
-    implicitHeight: 42
+    implicitHeight: iconDimension + Theme.spacingM
     height: implicitHeight
 
     StyledRect {
         id: pill
         anchors.horizontalCenter: parent.horizontalCenter
-        width: Math.min(root.maxPillWidth, Math.max(160, label.implicitWidth + icon.width
+        width: Math.min(root.maxPillWidth, Math.max(root.minPillWidth, label.implicitWidth + icon.width
             + Theme.spacingS + Theme.spacingM * 2 + (badge.visible ? badge.width + Theme.spacingS : 0)))
         height: root.height
         radius: height / 2
@@ -46,7 +48,7 @@ Item {
             DankCircularImage {
                 id: icon
                 anchors.verticalCenter: parent.verticalCenter
-                width: 28
+                width: root.iconDimension
                 height: width
                 imageSource: root.notificationData ? root.notificationData.displayImage : ""
                 fallbackIcon: root.notificationData ? root.notificationData.fallbackIconName : "material:notifications"
