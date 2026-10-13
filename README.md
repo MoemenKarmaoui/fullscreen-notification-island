@@ -1,6 +1,14 @@
 # Fullscreen Notification Island
 
+[![Vibe Coded](https://img.shields.io/badge/Vibe%20Coded%20with-ChatGPT%20Astra%20%26%20Antigravity-7928CA?style=for-the-badge&logo=openai&logoColor=white)](https://github.com/MoemenKarmaoui/fullscreen-notification-island)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg?style=for-the-badge)](LICENSE)
+[![DMS Version](https://img.shields.io/badge/DMS-%3E%3D1.6.0-teal?style=for-the-badge)](https://github.com/AvengeMedia/dms)
+
 ![Fullscreen Notification Island preview](assets/preview.svg)
+
+> ✨ **Note:** This whole plugin was proudly **vibe coded** from start to finish by **ChatGPT Astra** and **Antigravity**!
+
+---
 
 This DMS daemon plugin keeps the regular notification popup on its normal
 `top` layer. When a notification is active and the focused output contains a
@@ -10,6 +18,14 @@ between a detailed card stack and a compact DankIsland-style pill. Both styles
 use the DMS theme and follow DMS's own popup timeout, grouping, urgency, DND,
 and queue policy. Card mode can show several active cards; island mode shows
 the newest active popup and can add a `+N` count for the other active popups.
+
+## ✨ Vibe Coded With
+
+This entire plugin was vibe coded using:
+- 🤖 **ChatGPT Astra**
+- 🪐 **Antigravity**
+
+Special thanks to modern AI tools for crafting the QML components, layer-shell integration, settings schemas, and DankMaterialShell optimizations!
 
 ## Install
 
