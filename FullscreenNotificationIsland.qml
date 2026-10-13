@@ -5,6 +5,7 @@ import Quickshell
 import Quickshell.Wayland
 import qs.Common
 import qs.Services
+import qs.Widgets
 import qs.Modules.Plugins
 import "NotificationLogic.js" as Logic
 
@@ -202,7 +203,7 @@ PluginComponent {
                 }
                 Component {
                     id: cardStack
-                    ListView {
+                    DankListView {
                         id: stack
                         readonly property Item maskItem: stack
                         implicitHeight: Math.min(contentHeight, Math.max(1, win.modelData.height - root.topMargin - 16))
