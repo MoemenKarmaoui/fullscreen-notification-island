@@ -81,24 +81,16 @@ Item {
                     root.activated();
             }
         }
-        MouseArea {
+        DankActionButton {
             id: closeButton
             objectName: "dismissButton"
             anchors.top: parent.top
             anchors.right: parent.right
             anchors.margins: Theme.spacingXS
-            width: 28
-            height: 28
-            hoverEnabled: true
-            cursorShape: Qt.PointingHandCursor
+            iconName: "close"
+            iconColor: Theme.surfaceVariantText
+            tooltipText: "Dismiss"
             onClicked: root.dismissed()
-            DankIcon {
-                anchors.centerIn: parent
-                name: "close"
-                size: Theme.iconSizeSmall
-                color: Theme.surfaceVariantText
-                opacity: closeButton.containsMouse ? 1 : 0.65
-            }
         }
     }
 }
