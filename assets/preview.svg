@@ -1,26 +1,207 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1600 900" width="1600" height="900">
   <defs>
-    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#111827"/><stop offset="1" stop-color="#26354d"/>
+    <!-- Background and UI gradients -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0d14"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#070a10"/>
     </linearGradient>
-    <filter id="shadow" x="-20%" y="-20%" width="140%" height="160%"><feGaussianBlur stdDeviation="18"/><feComponentTransfer><feFuncA type="linear" slope=".35"/></feComponentTransfer><feOffset dy="12"/></filter>
+    <radialGradient id="glow-cyan" cx="20%" cy="15%" r="60%">
+      <stop offset="0%" stop-color="#06b6d4" stop-opacity="0.18"/>
+      <stop offset="100%" stop-color="#06b6d4" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-violet" cx="80%" cy="25%" r="65%">
+      <stop offset="0%" stop-color="#8b5cf6" stop-opacity="0.22"/>
+      <stop offset="100%" stop-color="#8b5cf6" stop-opacity="0"/>
+    </radialGradient>
+    <radialGradient id="glow-magenta" cx="50%" cy="85%" r="50%">
+      <stop offset="0%" stop-color="#f43f5e" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#f43f5e" stop-opacity="0"/>
+    </radialGradient>
+    
+    <linearGradient id="pillBorder" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#818cf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#c084fc" stop-opacity="0.8"/>
+    </linearGradient>
+    <linearGradient id="cardBorder" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#64748b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#334155" stop-opacity="0.3"/>
+    </linearGradient>
+    <linearGradient id="titleGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#f8fafc"/>
+      <stop offset="40%" stop-color="#e0f2fe"/>
+      <stop offset="100%" stop-color="#38bdf8"/>
+    </linearGradient>
+    <linearGradient id="vibeGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#a855f7"/>
+      <stop offset="50%" stop-color="#ec4899"/>
+      <stop offset="100%" stop-color="#f59e0b"/>
+    </linearGradient>
+
+    <!-- Filters -->
+    <filter id="shadow-soft" x="-20%" y="-20%" width="140%" height="150%">
+      <feDropShadow dx="0" dy="16" stdDeviation="24" flood-color="#000" flood-opacity="0.65"/>
+    </filter>
+    <filter id="shadow-pill" x="-20%" y="-20%" width="140%" height="160%">
+      <feDropShadow dx="0" dy="10" stdDeviation="18" flood-color="#0284c7" flood-opacity="0.35"/>
+      <feDropShadow dx="0" dy="16" stdDeviation="26" flood-color="#000" flood-opacity="0.7"/>
+    </filter>
   </defs>
+
+  <!-- Background Base -->
   <rect width="1600" height="900" fill="url(#bg)"/>
-  <circle cx="180" cy="230" r="240" fill="#3b82f6" opacity=".08"/><circle cx="1390" cy="720" r="330" fill="#22d3ee" opacity=".07"/>
-  <rect x="0" y="0" width="1600" height="62" fill="#0b1220" opacity=".88"/>
-  <text x="42" y="39" fill="#9ca3af" font-family="sans-serif" font-size="22">DankMaterialShell</text>
-  <text x="800" y="39" text-anchor="middle" fill="#8ea4c9" font-family="sans-serif" font-size="19">Fullscreen Notification Island</text>
-  <rect x="590" y="112" width="420" height="62" rx="31" fill="#1f2937" opacity=".96" filter="url(#shadow)"/>
-  <rect x="590" y="112" width="420" height="62" rx="31" fill="#202a3b" stroke="#51627d" stroke-width="2"/>
-  <circle cx="626" cy="143" r="14" fill="#3b82f6"/><path d="M626 132v22M617 141h18" stroke="#fff" stroke-width="2" stroke-linecap="round"/>
-  <text x="656" y="149" fill="#f3f4f6" font-family="sans-serif" font-size="23">KDE Connect · Galaxy A15</text>
-  <text x="800" y="260" text-anchor="middle" fill="#9fb2cf" font-family="sans-serif" font-size="22">Compact DankIsland-style notification above a fullscreen app</text>
-  <rect x="510" y="326" width="580" height="222" rx="20" fill="#111827" opacity=".7" filter="url(#shadow)"/>
-  <rect x="510" y="326" width="580" height="222" rx="20" fill="#202833" stroke="#60708b" stroke-width="2"/>
-  <circle cx="560" cy="380" r="22" fill="#3b82f6"/><path d="M560 366v28M549 378h22" stroke="#fff" stroke-width="3" stroke-linecap="round"/>
-  <text x="602" y="378" fill="#aebbd0" font-family="sans-serif" font-size="20">KDE Connect</text>
-  <text x="602" y="418" fill="#f9fafb" font-family="sans-serif" font-size="29">Galaxy A15</text>
-  <text x="602" y="457" fill="#c3cede" font-family="sans-serif" font-size="22">Ping!</text>
-  <rect x="548" y="492" width="505" height="4" rx="2" fill="#3b82f6" opacity=".9"/>
-  <text x="800" y="788" text-anchor="middle" fill="#8293ad" font-family="sans-serif" font-size="19">Selectable card or island mode · fullscreen-only · multi-monitor aware</text>
+  <rect width="1600" height="900" fill="url(#glow-cyan)"/>
+  <rect width="1600" height="900" fill="url(#glow-violet)"/>
+  <rect width="1600" height="900" fill="url(#glow-magenta)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.07" stroke="#94a3b8" stroke-width="1">
+    <line x1="0" y1="180" x2="1600" y2="180"/>
+    <line x1="0" y1="360" x2="1600" y2="360"/>
+    <line x1="0" y1="540" x2="1600" y2="540"/>
+    <line x1="0" y1="720" x2="1600" y2="720"/>
+    <line x1="320" y1="0" x2="320" y2="900"/>
+    <line x1="640" y1="0" x2="640" y2="900"/>
+    <line x1="960" y1="0" x2="960" y2="900"/>
+    <line x1="1280" y1="0" x2="1280" y2="900"/>
+  </g>
+
+  <!-- Fullscreen App Mockup Background (Game / Video Workspace) -->
+  <g transform="translate(140, 160)" filter="url(#shadow-soft)">
+    <!-- Monitor Bezel / Screen Area -->
+    <rect width="1320" height="660" rx="16" fill="#090d16" stroke="#1e293b" stroke-width="2"/>
+    
+    <!-- Fullscreen game/workspace scene illustration -->
+    <path d="M 0,440 Q 280,380 540,410 T 1000,430 T 1320,410 L 1320,660 L 0,660 Z" fill="#0b1120"/>
+    <path d="M 0,490 Q 340,430 680,480 T 1320,460 L 1320,660 L 0,660 Z" fill="#0f172a" opacity="0.9"/>
+    <path d="M 0,550 Q 420,490 880,530 T 1320,520 L 1320,660 L 0,660 Z" fill="#131c31"/>
+    
+    <!-- Horizon Glow -->
+    <ellipse cx="660" cy="480" rx="420" ry="120" fill="#6366f1" opacity="0.12"/>
+    <ellipse cx="660" cy="490" rx="200" ry="60" fill="#38bdf8" opacity="0.18"/>
+
+    <!-- Fullscreen App Status Indicator (Bottom Left) -->
+    <g transform="translate(28, 616)">
+      <circle cx="10" cy="10" r="5" fill="#22c55e"/>
+      <text x="24" y="14" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">FULLSCREEN TOPLEVEL FOCUSED (GAME / MEDIA)</text>
+    </g>
+    <!-- Overlay Layer Indicator (Bottom Right) -->
+    <g transform="translate(1030, 616)">
+      <rect x="0" y="0" width="260" height="24" rx="6" fill="#1e293b" opacity="0.8"/>
+      <text x="130" y="16" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">LAYER: WlrLayer.Overlay</text>
+    </g>
+
+    <!-- ====== 1. COMPACT ISLAND (Top Center of Fullscreen App) ====== -->
+    <g transform="translate(435, 24)" filter="url(#shadow-pill)">
+      <!-- Outer Pill container -->
+      <rect width="450" height="58" rx="29" fill="#0f172a" fill-opacity="0.95"/>
+      <rect width="450" height="58" rx="29" fill="none" stroke="url(#pillBorder)" stroke-width="1.8"/>
+
+      <!-- App Icon (Discord / Chat style avatar) -->
+      <circle cx="34" cy="29" r="17" fill="#5865F2"/>
+      <path d="M 27,24 C 28.5,22 39.5,22 41,24 C 42,28 42,34 40.5,37 C 38.5,39 36,38 34.5,36 C 33.5,36 32.5,36 31.5,36 C 30,38 27.5,39 25.5,37 C 24,34 24,28 27,24 Z" fill="#fff" opacity="0.95"/>
+      <circle cx="30" cy="30" r="1.8" fill="#5865F2"/>
+      <circle cx="38" cy="30" r="1.8" fill="#5865F2"/>
+
+      <!-- Text: App Name and Preview -->
+      <text x="64" y="36" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="600">
+        Discord <tspan fill="#94a3b8" font-weight="400">· #general · Hey, are you in game?</tspan>
+      </text>
+
+      <!-- Badge (+2 other popups) -->
+      <rect x="396" y="16" width="36" height="26" rx="13" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="414" y="34" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="700">+2</text>
+    </g>
+
+    <!-- Label above Pill -->
+    <text x="660" y="112" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="1">
+      ▲ COMPACT DANKISLAND-STYLE PILL (CENTERED OVERLAY)
+    </text>
+
+    <!-- ====== 2. DETAILED CARD STACK (Floating on Right) ====== -->
+    <g transform="translate(850, 150)" filter="url(#shadow-soft)">
+      <!-- Card Container -->
+      <rect width="430" height="135" rx="18" fill="#111827" fill-opacity="0.96"/>
+      <rect width="430" height="135" rx="18" fill="none" stroke="url(#cardBorder)" stroke-width="1.5"/>
+
+      <!-- App Icon Avatar -->
+      <circle cx="38" cy="40" r="22" fill="#0284c7"/>
+      <!-- Bell / Notification icon inside -->
+      <path d="M 38,28 C 34,28 31,31 31,35 L 31,43 L 28,46 L 28,48 L 48,48 L 48,46 L 45,43 L 45,35 C 45,31 42,28 38,28 Z M 36,50 C 36,51.1 36.9,52 38,52 C 39.1,52 40,51.1 40,50 Z" fill="#f0f9ff"/>
+
+      <!-- App Name -->
+      <text x="74" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="500">Steam · Friend Activity</text>
+      
+      <!-- Summary -->
+      <text x="74" y="55" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="700">Alex is playing Cyberpunk 2077</text>
+      
+      <!-- Body snippet -->
+      <text x="74" y="80" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14">"Join lobby? We have an open slot right now."</text>
+
+      <!-- Action Chips / Button -->
+      <g transform="translate(74, 96)">
+        <rect width="84" height="26" rx="13" fill="#0284c7" opacity="0.25"/>
+        <text x="42" y="17" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Launch Game</text>
+      </g>
+
+      <!-- DankActionButton (Dismiss Close Button) -->
+      <g transform="translate(390, 16)">
+        <circle cx="14" cy="14" r="14" fill="#1f2937" stroke="#374151" stroke-width="1"/>
+        <path d="M 10,10 L 18,18 M 18,10 L 10,18" stroke="#94a3b8" stroke-width="1.8" stroke-linecap="round"/>
+      </g>
+    </g>
+
+    <!-- Label above Detailed Card -->
+    <text x="1065" y="136" text-anchor="middle" fill="#a855f7" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600" letter-spacing="1">
+      ▲ DETAILED CARD MODE (DANKLISTVIEW)
+    </text>
+
+    <!-- Second Stacked Card Behind (Showing Stack Effect) -->
+    <g transform="translate(860, 305)" opacity="0.75" filter="url(#shadow-soft)">
+      <rect width="410" height="90" rx="16" fill="#0f172a" fill-opacity="0.95"/>
+      <rect width="410" height="90" rx="16" fill="none" stroke="#334155" stroke-width="1"/>
+      <circle cx="36" cy="38" r="18" fill="#10b981"/>
+      <text x="68" y="32" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12">Spotify</text>
+      <text x="68" y="52" fill="#f8fafc" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="15" font-weight="600">Starboy — The Weeknd</text>
+    </g>
+  </g>
+
+  <!-- ====== HEADER & BRANDING ====== -->
+  <g transform="translate(140, 72)">
+    <!-- Main Title -->
+    <text x="0" y="38" fill="url(#titleGrad)" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="38" font-weight="800" letter-spacing="-0.5">
+      Fullscreen Notification Island
+    </text>
+    <!-- Subtitle -->
+    <text x="0" y="66" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="17" font-weight="400">
+      Selectable notification cards &amp; compact pills above fullscreen apps for <tspan fill="#38bdf8" font-weight="600">DankMaterialShell</tspan>
+    </text>
+
+    <!-- Top Right Pills / Chips -->
+    <g transform="translate(900, 16)">
+      <!-- M3 Token Chip -->
+      <rect x="0" y="0" width="130" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="65" y="21" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">DMS 1.6+ Ready</text>
+      <!-- Pure Overlay Chip -->
+      <rect x="142" y="0" width="140" height="32" rx="16" fill="#1e293b" stroke="#38bdf8" stroke-width="1"/>
+      <text x="212" y="21" text-anchor="middle" fill="#38bdf8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Wayland Overlay</text>
+      <!-- Multi-monitor Chip -->
+      <rect x="294" y="0" width="126" height="32" rx="16" fill="#1e293b" stroke="#334155" stroke-width="1"/>
+      <text x="357" y="21" text-anchor="middle" fill="#cbd5e1" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="13" font-weight="600">Multi-Monitor</text>
+    </g>
+  </g>
+
+  <!-- ====== FOOTER VIBE CODED BADGE ====== -->
+  <g transform="translate(140, 848)">
+    <rect x="0" y="0" width="460" height="34" rx="17" fill="#0f172a" stroke="url(#vibeGrad)" stroke-width="1.4"/>
+    <text x="22" y="22" fill="#e2e8f0" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="500">
+      ✨ Vibe coded with <tspan fill="#f43f5e" font-weight="700">ChatGPT Astra</tspan> &amp; <tspan fill="#38bdf8" font-weight="700">Antigravity</tspan>
+    </text>
+
+    <!-- Right side attribution -->
+    <text x="1320" y="22" text-anchor="end" fill="#64748b" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="14" font-weight="400">
+      MIT Licensed · by <tspan fill="#94a3b8" font-weight="600">@MoemenKarmaoui</tspan>
+    </text>
+  </g>
 </svg>
